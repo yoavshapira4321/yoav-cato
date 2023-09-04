@@ -1,0 +1,148 @@
+@media (min-width: 1000px) and (max-width: 1640px) {
+  .main_container {
+    padding: 100px 28px;
+    gap: 32px;
+  }
+  .main_container p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+  }
+  .main_container h1 {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0em;
+  }
+  .main_container h2 {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0em;
+  }
+  .main_container h4 {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0em;
+  }
+  .main_container .learning_center {
+    gap: 32px;
+  }
+  .main_container .learning_center .image_container {
+    width: 300px;
+  }
+  .main_container .learning_center h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .main_container .learning_center .cards_container {
+    gap: 32px;
+  }
+  .main_container .learning_center input {
+    padding: 18px 16px 18px 24px;
+    border-radius: 100px;
+    gap: 15px;
+    width: 570px;
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 21px;
+    letter-spacing: 0em;
+  }
+  .main_container .learning_center input::-moz-placeholder {
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .main_container .learning_center input::placeholder {
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .main_container .learning_center .card_container {
+    padding: 16px 22px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .main_container .learning_center .card_container img {
+    width: 150px;
+    height: 100px;
+  }
+  .main_container .learning_center .card_container p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+  }
+  .main_container .features_articles .mobile_card_container {
+    display: none;
+  }
+  .main_container .features_articles .cards_container {
+    gap: 31px;
+  }
+  .main_container .features_articles .cards_container .card_container {
+    border-radius: 10px;
+    display: flex;
+    padding: 16px;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .main_container .features_articles .cards_container .card_container .colum h1 {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0em;
+  }
+  .main_container .features_articles .cards_container .card_container .colum p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+  }
+  .main_container .features_articles .cards_container .card_container .colum button {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0em;
+  }
+  .main_container .features_articles .cards_container .card_container img {
+    width: 100px;
+    height: 92px;
+  }
+  .main_container .features_articles .green-balls-container {
+    gap: 50px;
+    padding-top: 50px;
+  }
+  .main_container .features_articles .green-balls-container span {
+    border-radius: 50px;
+    height: 15px;
+    width: 15px;
+  }
+  .main_container .more_content .cards_container {
+    gap: 30px;
+  }
+  .main_container .more_content .cards_container .card_container {
+    padding: 24px 30px;
+    gap: 24px;
+    border-radius: 10px;
+  }
+  .main_container .more_content .cards_container .card_container img {
+    width: 70px;
+    height: 53px;
+  }
+  .main_container .table_of_content_column .images_container {
+    gap: 24px;
+  }
+  .main_container .table_of_content_column .cards_container .column {
+    padding: 0;
+    font-size: 16px;
+  }
+  .main_container .table_of_content_column .cards_container .column p {
+    margin: 0;
+  }
+  .main_container .footer_container {
+    gap: 16px;
+  }
+  .main_container .footer_container span {
+    border-radius: 50px;
+    height: 4px;
+    width: 4px;
+  }
+}/*# sourceMappingURL=laptop-cato-education-style.css.map */

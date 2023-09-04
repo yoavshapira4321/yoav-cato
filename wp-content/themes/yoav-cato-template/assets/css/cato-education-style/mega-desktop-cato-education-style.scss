@@ -1,0 +1,196 @@
+@media (min-width: 2200px) {
+
+    
+@mixin plain_text {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+@mixin h1_title {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0em;
+  }
+
+@mixin h2_title {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0em;
+
+}
+
+@mixin h4_title {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0em;
+
+}
+@mixin card_container{
+    padding: 24px 30px;
+    gap: 24px;
+    border-radius: 10px;
+}
+.main_container{
+    p{
+        @include plain_text;
+    }
+    h1{
+        @include h1_title;
+    }
+    h2{
+        @include h2_title;
+    }
+    h4{
+        @include h4_title;
+
+    }
+
+    padding: 100px 332px;
+    gap: 40px;
+    .learning_center{
+        .image_container{
+            width: 370px;
+
+        }
+
+        h1{
+            font-size: 40px;
+            font-weight: 600;
+        }
+        .cards_container{
+            gap: 32px;
+
+        }
+        gap: 32px;
+        input{
+            padding: 18px 16px 18px 24px;
+            border-radius: 100px;
+            gap: 15px;
+            width: 700px;
+            font-size: 18px;
+            font-weight: 450;
+            line-height: 21px;
+            letter-spacing: 0em;
+
+            &::placeholder {
+                font-size: 18px;
+                font-weight: 450;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: left;
+
+              }
+        }
+        .card_container{
+            padding: 24px 30px;
+            text-align: center;
+            border-radius: 10px;
+            img{
+                width: 280px;
+            }
+
+            p{
+                @include plain_text;
+
+            }
+
+        }
+    }
+    .features_articles{
+        .mobile_card_container{
+            display: none;
+        }
+
+        .cards_container{
+
+            gap: 31px;
+            .card_container{
+                border-radius: 10px;
+                display: flex;
+                padding: 16px;
+                gap: 30px;
+                justify-content: space-between;
+
+                .colum{
+
+                    h1{
+                        @include h1_title;
+                    }
+                    p{
+                        @include plain_text;
+                    }
+                    button{
+                        font-size: 16px;
+                        line-height: 20px;
+                        letter-spacing: 0em;
+                    }
+
+
+                }
+                img{
+                    width: 156px;
+                    height: 130px;
+                    
+                }
+            }
+            
+        }
+        .green-balls-container{
+
+            gap: 50px;
+            padding-top: 50px;
+            span{
+                border-radius: 50px;
+                height: 15px;
+                width: 15px;
+            }
+        } 
+    }
+
+    .more_content{
+
+
+        .cards_container{
+            gap: 30px;
+
+
+            .card_container{
+                @include card_container;
+
+            }
+        }
+    }
+    
+    .table_of_content_column{
+        .images_container{
+            gap: 24px;
+        }
+        .cards_container{
+
+            .column{
+                padding: 0;
+                p{
+                    margin: 0;
+
+
+                }
+                font-size: 16px;
+
+            }
+        }
+
+
+    }
+
+    .footer_container{
+        gap: 16px;
+        span{
+            border-radius: 50px;
+            height: 4px;
+            width: 4px;
+        }
+    }
+    
+}
+
+}

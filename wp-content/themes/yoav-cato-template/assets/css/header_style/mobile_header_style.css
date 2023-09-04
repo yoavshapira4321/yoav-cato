@@ -1,0 +1,11 @@
+@media (min-width: 324px) and (max-width: 1000px) {
+  header .special_button .release_note {
+    display: none;
+  }
+  header .logo img {
+    height: 24px;
+  }
+  header .nav_container {
+    display: none;
+  }
+}/*# sourceMappingURL=mobile_header_style.css.map */

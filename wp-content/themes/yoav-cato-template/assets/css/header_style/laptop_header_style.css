@@ -1,0 +1,8 @@
+@media (min-width: 1000px) and (max-width: 1640px) {
+  header .logo img {
+    height: 36px;
+  }
+  header .nav_container {
+    display: none;
+  }
+}/*# sourceMappingURL=laptop_header_style.css.map */

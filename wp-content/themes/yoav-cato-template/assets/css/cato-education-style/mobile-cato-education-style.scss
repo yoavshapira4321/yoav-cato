@@ -1,0 +1,240 @@
+@media (min-width: 324px) and (max-width: 1000px) {
+    :root{
+        --cato-green: #158864;
+
+    }
+
+    @mixin plain_text {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+      }
+    @mixin h1_title {
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 0em;
+      }
+    
+    @mixin h2_title {
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0em;
+    
+    }
+    
+    @mixin h4_title {
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0em;
+        color: black;
+    
+    }
+    @mixin card_container{
+        padding: 16px;
+        gap: 16px;
+        text-align: center;
+        border-radius: 10px;
+
+    }
+    .main_container{
+        p{
+            @include plain_text;
+        }
+        h1{
+            @include h1_title;
+        }
+        h2{
+            @include h2_title;
+        }
+        h4{
+            @include h4_title;
+    
+        }
+    
+        padding: 100px 10px;
+        gap: 32px;
+        .learning_center{
+            .image_container{
+                width: 220px;
+    
+            }
+    
+            .cards_container{
+                width: 100%;
+                flex-direction: column;
+                gap: 24px;
+    
+            }
+            gap: 24px;
+            input{
+                width: calc(100% - 36px);
+                padding: 18px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: 450;
+                line-height: 21px;
+                letter-spacing: 0em;
+    
+                &::placeholder {
+                    @include plain_text;
+
+    
+                  }
+            }
+            .card_container{
+                padding: 16px 22px;
+                width: calc(100% - 44px);
+                border-radius: 10px;
+
+                img{
+                    height: 70px;
+                    width: auto;
+                }
+    
+                p{
+                    @include plain_text;
+    
+                }
+    
+            }
+        }
+        .features_articles{
+
+            .mobile_card_container{
+
+                display: inline;
+                #slider {
+
+                    input[type=radio] {
+                        display: none;
+                      }
+                      label {
+                        cursor:pointer;
+                        text-decoration: none;
+                      }
+                  }
+
+                 
+                  #slides {
+                    padding: 16px;
+                    border: 1px solid var(--cato-green);
+                    border-radius: 10px;
+                    background: #fff;
+                    position: relative;
+                    z-index: 1;
+
+                    .inner {
+                        transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);    
+                      }
+                      .slide {
+                        float:left;
+                        display: flex;
+                        gap: 16px;
+
+                        justify-content: space-between;
+                        align-items: center;
+                        color: #fff;
+                        .column{
+
+                            p{
+                                display: none;
+                            }
+                            button{
+                               display: none;
+                            }
+                        }
+                      }
+    
+                  }
+                  #overflow {
+                    width: 100%;
+                    overflow: hidden;
+                  }
+
+                  
+
+
+                  #bullets {
+                    margin: 24px 0 0;
+                    text-align: center;
+                    label {
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        border-radius:100%;
+                        border: solid 1px var(--cato_green_50);
+                        margin: 0 10px;
+                      }
+                  }
+                  
+                  
+            }
+            .cards_container{
+                display: none; 
+            }
+            .green-balls-container{
+                display: none;
+            } 
+        }
+        .more_content{
+            .cards_container{
+                grid-template-columns: auto auto;
+                gap: 10px;
+                .card_container{
+                    h4{
+                        text-align: center;
+                    }
+                    align-items: center;
+                    p{
+                        display: none;
+                    }
+                    flex-direction: column;
+                    img{
+                        width: 80px;
+                    }
+                    @include card_container;
+    
+                }
+            }
+        }
+        
+        .table_of_content_column{
+            .images_container{
+                gap: 24px;
+                margin-bottom: 32px;
+            }
+            .cards_container{
+                display: grid;
+                justify-content: space-between;
+                grid-template-columns: auto auto;
+
+    
+                .column{
+                    padding: 0;
+                    p{
+                        margin: 0;
+    
+    
+                    }
+                    font-size: 16px;
+    
+                }
+            }
+    
+    
+        }
+    
+        .footer_container{
+
+
+            gap: 16px;
+            span{
+                border-radius: 50px;
+                height: 4px;
+                width: 4px;
+            }
+        }
+        
+    }
+
+    }
