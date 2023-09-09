@@ -1,0 +1,76 @@
+@media (min-width: 1000px) and (max-width: 1640px) {
+    
+
+    .main_container{
+
+        padding: 140px 0px;
+        width: 948px;
+        gap: 24px;    
+        .welcome{
+            gap: 24px;
+            border-radius: 10px;
+            padding: 48px;
+            .column{
+                h1{
+                    font-size: 38px;
+                }
+                input{
+                    width: 455px;
+                    padding: 18px 16px 18px 24px;
+                }
+            }
+                img{
+                    width: 280px;
+                    height: 180px;
+                }
+        }
+        .grid_container{
+            gap: 32px;
+            .card{
+                padding: 16px;
+                gap: 16px;
+    
+    
+                .column{
+                    img{
+                        width: 32px;
+                        height: 32px;
+                    }
+                    h1{
+                        font-size: 24px;
+        
+                    }
+        
+    
+                    gap: 12px;
+                    .row{
+                        gap: 10px;
+    
+                        p{
+                            margin: 0;
+                            font-size: 18px;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+    
+            
+                        }
+                        img{
+                            width: 15px;
+                            height: 15px;
+                        }
+        
+                    }
+    
+                }
+    
+                
+                
+    
+            }
+        }
+    
+    
+    
+    
+    }
+}

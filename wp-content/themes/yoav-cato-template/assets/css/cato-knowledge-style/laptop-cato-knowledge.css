@@ -1,0 +1,53 @@
+@media (min-width: 1000px) and (max-width: 1640px) {
+  .main_container {
+    padding: 140px 0px;
+    width: 948px;
+    gap: 24px;
+  }
+  .main_container .welcome {
+    gap: 24px;
+    border-radius: 10px;
+    padding: 48px;
+  }
+  .main_container .welcome .column h1 {
+    font-size: 38px;
+  }
+  .main_container .welcome .column input {
+    width: 455px;
+    padding: 18px 16px 18px 24px;
+  }
+  .main_container .welcome img {
+    width: 280px;
+    height: 180px;
+  }
+  .main_container .grid_container {
+    gap: 32px;
+  }
+  .main_container .grid_container .card {
+    padding: 16px;
+    gap: 16px;
+  }
+  .main_container .grid_container .card .column {
+    gap: 12px;
+  }
+  .main_container .grid_container .card .column img {
+    width: 32px;
+    height: 32px;
+  }
+  .main_container .grid_container .card .column h1 {
+    font-size: 24px;
+  }
+  .main_container .grid_container .card .column .row {
+    gap: 10px;
+  }
+  .main_container .grid_container .card .column .row p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0em;
+  }
+  .main_container .grid_container .card .column .row img {
+    width: 15px;
+    height: 15px;
+  }
+}/*# sourceMappingURL=laptop-cato-knowledge.css.map */

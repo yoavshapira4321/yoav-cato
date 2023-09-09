@@ -13,8 +13,9 @@
 
 <header>
     <div class="logo">
+
       <a  href="<?php echo esc_url(home_url('/')); ?>">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/CATO LOGO 2019-svg 1.png' ); ?>" alt="Your Logo">
+      <img src="<?php echo get_field('logo','options');?>" alt="Your Logo">
       </a>
     </div> 
   <?php
@@ -28,39 +29,107 @@
 <div class="new_header">
   <div class="row">
   <div class="grey-circle"></div>
-  <h2>Merlon Williams</h2>
+  <h2><?php echo get_field('humburger_h2_title','options');?></h2>
   </div>
-  <p>Profile settings</p>
-  <p>My requests</p>
-  <p>My contribution</p>
-  <p>Sign out</p>
+  <?php
+  $options = get_field('humburger_options','options');
+  foreach ($options as $option){
+    ?><?php echo $option['option'];?></p>
+    <?
+  }
+
+  ?>
+
   <div class="teal-line"></div>
   <div class="row">
-    <p>Cato Management Application</p>
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M14.367 3.89844L9.97656 8.236" stroke="#006ADC" stroke-opacity="0.65" stroke-miterlimit="10"/>
-    <path d="M11.0508 3.89844H14.368V7.17571" stroke="#006ADC" stroke-opacity="0.65" stroke-miterlimit="10"/>
-    <path d="M11.9274 12.0901V16.3312C11.9274 16.8132 11.5371 17.1987 11.0493 17.1987H1.87809C1.39026 17.1987 1 16.8132 1 16.3312V7.17415C1 6.6922 1.39026 6.30664 1.87809 6.30664H6.07342" stroke="#006ADC" stroke-opacity="0.65" stroke-miterlimit="10"/>
-    <path d="M16.1215 1.19922H6.95036C6.46253 1.19922 6.07227 1.68117 6.07227 2.16312V11.2238C6.07227 11.7058 6.46253 12.0913 6.95036 12.0913H16.1215C16.6094 12.0913 16.9996 11.7058 16.9996 11.2238V2.16312C16.9996 1.68117 16.6094 1.19922 16.1215 1.19922Z" stroke="#006ADC" stroke-opacity="0.65" stroke-miterlimit="10"/>
-  </svg>
+    <p><?php echo get_field('footer_plain_text','options');?></p>
+    <img src="<?php echo get_field('footer_image','options');?>" alt="">
+  </div>
+</div>
+<div class="left_header_container">
+  <div class="left_header">
+      <?php 
+    $a = get_field('left_header_options','options');
+    foreach ($a as $b){
+      ?>
+        <div class="option">
+          <img src="<?php echo $b['image']?>" alt="">
+          <p><?php echo $b['option']?></p>
+
+        </div>
+
+      <?
+    }
+
+      ?>
+      <button>
+        <div class="arrow">
+          <div class="arrow-body"></div>
+          <div class="arrow-top-wing"></div>
+          <div class="arrow-bottom-wing"></div>
+          <div class="arrow-roof"></div>
+        </div>
+      </button>
+      <div class="sub_left_header">
+
+        <?php
+          $sub_left_header_options = get_field('sub_left_header_options','options');
+          foreach ($sub_left_header_options as $level1){
+            ?>
+            <div class="level_1">
+
+              <p><?php echo $level1['level_1_text'];?></p>
+              <div class="down-pointing-arrow">
+              <div class="left-wing"></div>
+                    <div class="right-wing"></div>
+              </div>
+            <?php
+            foreach ($level1['level_2'] as $level2){
+              ?>
+              <div class="level_2">
+
+              <p><?php echo $level2['level_2_text'];?></p>
+              <div class="down-pointing-arrow">
+              <div class="left-wing"></div>
+                    <div class="right-wing"></div>
+              </div>
+
+            <?php
+              foreach ($level2['level_3'] as $level3){
+                ?>
+                <div class="level_3">
+                <p><?php echo $level3['level_3_text'];?></p>
+                
+
+                </div>
+              <?php
+                }
+                ?>
+                </div>
+                <?
+            }
+            ?>
+              </div>
+            <?
+          }
+
+        ?>
+      </div>
+
   </div>
 
-
-
-
-
 </div>
+
 
 <div class="special_button">
   <button class="release_note">Release Notes</button>
   <button class="sign_in">Sign In</button>
   <div class="humburger">
-  <span class="l1"></span>
-  <span class="l2"></span>
-  <span class="l3"></span>
+    <span class="l1"></span>
+    <span class="l2"></span>
+    <span class="l3"></span>
   </div>
 
 </div>
 </header>
- <main>
- 
+<main>

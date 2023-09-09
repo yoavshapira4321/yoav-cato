@@ -15,6 +15,12 @@ function cato_load_scripts() {
       wp_enqueue_style('cato-education-style', get_template_directory_uri() . '/assets/css/cato-education-style/cato-education-style.css', array(), '1.0.0', 'all');
       wp_enqueue_script( 'cato-education-script', get_template_directory_uri() . '/assets/js/cato-education-script.js', array(), '1.0.0', 'all');
   }
+  if ( is_page_template( 'cato-knowledge-base.php' ) ) {
+    // Enqueue cato education stylesheet only for the specific template
+    wp_enqueue_style('cato-knowledge-base-style', get_template_directory_uri() . '/assets/css/cato-knowledge-style/cato-knowledge.css', array(), '1.0.0', 'all');
+    wp_enqueue_script( 'cato-knowledge-base-script', get_template_directory_uri() . '/assets/js/cato-knowledge-script.js', array(), '1.0.0', 'all');
+
+}
 }
 add_action('wp_enqueue_scripts', 'cato_load_scripts');
 
@@ -35,3 +41,16 @@ function yaelsite_theme_init()
 }
 
 add_action('after_setup_theme', 'yaelsite_theme_init');
+add_action('acf/init' ,'my_acf_option_init');
+function my_acf_option_init() {
+  if(function_exists('my_acf_option_init')) {
+    $options_page = acf_add_options_page(array(
+      'page_title' => __('Theme Setting'),
+      'menu_title' => __('Theme Setting'),
+      'menu_slug' => 'theme-setting',
+      'capability' => 'edit_posts',
+      'redirect' => false,
+
+    ));
+  }
+}

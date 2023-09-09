@@ -5,6 +5,11 @@
   --cato_silver: #4C6372;
 }
 
+.rotate {
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(180deg);
+}
+
 body, button {
   margin: 0;
   padding: 0;
@@ -64,7 +69,7 @@ header .special_button .sign_in {
 header .special_button .humburger {
   z-index: 1000000;
   position: relative;
-  margin-right: 40px;
+  width: 40px;
   transition: all 0.2s ease-out;
 }
 header .special_button .humburger span {
@@ -133,10 +138,162 @@ header .new_header .teal-line {
   height: 1px;
   margin: 18px 0;
 }
-header .active {
-  transition: 0.5s;
-  right: 0;
+header .left_header_container {
+  z-index: 10000;
 }
+header .left_header_container .left_header {
+  z-index: 100;
+  display: flex;
+  position: relative;
+  transition: 0.5s;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 0px 16px 0px 0px;
+  border: solid 1px #8AC4B2;
+  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1); /* Adjust the horizontal offset */
+  position: fixed;
+  background-color: white;
+  left: -170px;
+  opacity: 0;
+  top: 0;
+  width: 140px;
+  height: 100vh;
+}
+header .left_header_container .left_header button {
+  z-index: 100;
+  border: transparent;
+  background-color: transparent;
+  position: absolute;
+  right: -13.5px;
+  top: 100px;
+}
+header .left_header_container .left_header button .arrow {
+  transform: translate(0, 10px);
+  transition: 0.5s;
+}
+header .left_header_container .left_header button .arrow .arrow-body {
+  border-radius: 50px;
+  width: 13.5px;
+  height: 1px;
+  background-color: #8AC4B2;
+}
+header .left_header_container .left_header button .arrow .arrow-top-wing {
+  border-radius: 50px;
+  width: 6.25px;
+  height: 1px;
+  rotate: -135deg;
+  transform: translate(-3px, 7.5px);
+  background-color: #8AC4B2;
+}
+header .left_header_container .left_header button .arrow .arrow-bottom-wing {
+  border-radius: 50px;
+  width: 6.25px;
+  height: 1px;
+  rotate: 135deg;
+  transform: translate(-5.5px, -5px);
+  background-color: #8AC4B2;
+}
+header .left_header_container .left_header button .arrow .arrow-roof {
+  height: 15px;
+  width: 1px;
+  border-radius: 50px;
+  transform: translate(16.5px, -10px);
+  background-color: #8AC4B2;
+}
+header .left_header_container .left_header button .button_active {
+  transition: 0.5s;
+  rotate: 180deg;
+  transform: translateX(-300px);
+}
+header .left_header_container .left_header .option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+header .left_header_container .left_header .option p {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0em;
+  color: #4C6372;
+}
+header .left_header_container .left_header .option img {
+  position: static;
+  width: 35px;
+  height: 35px;
+}
+header .left_header_container .left_header .sub_left_header {
+  transition: 0.5s;
+  background-color: white;
+  position: absolute;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  border: solid 1px #158864;
+  text-align: left;
+}
+header .left_header_container .left_header .sub_left_header .level_1 {
+  padding-left: 10px;
+}
+header .left_header_container .left_header .sub_left_header .level_1 .level_2 {
+  display: none;
+  padding-left: 10px;
+}
+header .left_header_container .left_header .sub_left_header .level_1 .level_2 .level_3 {
+  display: none;
+  padding-left: 10px;
+}
+header .left_header_container .left_header .sub_left_header .level_1 .level_2 .active {
+  display: flex;
+  flex-direction: column;
+}
+header .left_header_container .left_header .sub_left_header .level_1 .active {
+  display: flex;
+  flex-direction: column;
+}
+header .left_header_container .left_header .sub_left_header .active {
+  display: flex;
+  flex-direction: column;
+}
+header .left_header_container .left_header .sub_left_header .down-pointing-arrow {
+  height: 20px;
+  display: flex;
+  position: absolute;
+  top: 20;
+  right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+header .left_header_container .left_header .sub_left_header .down-pointing-arrow .left-wing {
+  background-color: #8AC4B2;
+  height: 1px;
+  width: 10px;
+  border-radius: 50px;
+  rotate: 45deg;
+  transform: translate(2px, -2.5px);
+}
+header .left_header_container .left_header .sub_left_header .down-pointing-arrow .right-wing {
+  background-color: #8AC4B2;
+  height: 1px;
+  width: 10px;
+  border-radius: 50px;
+  rotate: -45deg;
+  transform: translate(0px, 0px);
+}
+header .left_header_container .left_header .active {
+  transition: 0.5s;
+  left: 170px;
+}
+header .left_header_container .left_active {
+  transition: 0.5s;
+  left: 0;
+  opacity: 100%;
+}
+
 @media (min-width: 1000px) and (max-width: 1640px) {
   header .logo img {
     height: 36px;

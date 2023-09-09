@@ -1,0 +1,135 @@
+
+
+.main_container{
+
+    padding: 140px 0px;
+    width: 1456px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+
+
+
+
+
+    .welcome{
+        display: flex;
+        justify-content: center;
+        background-color: #FFFAE7;
+        gap: 38px;
+
+        border: solid 1px #8AC4B2;
+        border-radius: 10px;
+        justify-content: space-between;
+        padding: 48px;
+        .column_0{
+            display: none;
+        }
+
+        .column{
+            h1{
+                font-size: 50px;
+                color: #158864;
+                
+                font-weight: 700;
+            }
+            input{
+                background-color: white;
+                border: solid 1px #158864;
+                border-radius: 100px;
+                width: 711px;
+                padding: 18px 16px 18px 24px;
+    
+            }
+            input::placeholder {
+                color: gray;
+              }
+
+        }
+
+
+        img{
+            width: 400px;
+            height: 260px;
+            
+        }
+        @media (max-width: 1920px) {
+            img{
+                width: 340px;
+                height: 220px;
+                
+            }
+        }
+    }
+    .grid_container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 38px;
+        .card{
+            border: solid 1px #8AC4B2;
+            border-radius: 8px;
+            padding: 17px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            justify-content: center;
+            .down-pointing-arrow{
+                display: none;
+            }
+
+
+            .column{
+                
+                img{
+                    align-self: center;
+                    width: 40px;
+                    height: 40px;
+                }
+    
+                h1{
+                    font-size: 30px;
+                    margin: 0;
+                    text-align: center;
+    
+                }
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .row{
+                    display: flex;
+                    gap: 13px;
+
+                    p{
+                        margin: 0;
+                        font-size: 18px;
+                        line-height: 21px;
+                        letter-spacing: 0em;
+                        text-align: left;
+
+        
+                    }
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+    
+                }
+
+            }    
+            
+            .more{
+                display: flex;
+                justify-content: end;
+                p{
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+
+@import 'desktop-cato-knowledge.scss';
+@import 'laptop-cato-knowledge.scss';
+@import 'mobile-cato-knowledge.scss';

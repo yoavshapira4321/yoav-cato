@@ -1,13 +1,13 @@
-
-
-
 :root{
     --cato-green: #158864;
     --cato_darkest_dark: #222C33;
     --cato_supernova: #FDCA0B;
     --cato_silver: #4C6372;
-
 }
+.rotate {
+    transition: transform 0.5s ease-in-out;  // Animation will take 0.5 seconds
+    transform: rotate(180deg);
+  }
 
 
 body, button{
@@ -82,7 +82,7 @@ header{
             .humburger{
                 z-index: 1000000;
                 position: relative;
-                margin-right: 40px;
+                width: 40px;
                 transition: all .2s ease-out;
 
                 span{
@@ -164,14 +164,204 @@ header{
 
         
     }
-    .active{
-        transition: 0.5s;
-        right: 0;        
+    .left_header_container{
+        z-index: 10000;
 
-}
-    .vertical-header{
+
+
+        .left_header{
+            z-index: 100;
+
+            button{
+                z-index: 100;
+                border: transparent;
+                background-color: transparent;
+                position: absolute;
+                right: -13.5px;
+                top: 100px;
+                .arrow{
+                    transform: translate(0, 10px);
+                    transition: 0.5s;
+
+                    .arrow-body{
+                        border-radius: 50px;
+                        width: 13.5px;
+                        height: 1px;
+                        background-color: #8AC4B2;
+                    }
+                    .arrow-top-wing{
+                        border-radius: 50px;
+                        width: 6.25px;
+                        height: 1px;
+                        rotate: -135deg;
+                        transform: translate(-3px, 7.5px);
+
+    
+                        background-color: #8AC4B2;
+                    }
+                    .arrow-bottom-wing{
+                        border-radius: 50px;
+                        width: 6.25px;
+                        height: 1px;
+                        rotate: 135deg;
+                        transform: translate(-5.5px, -5px);
+
+
+
+                        background-color: #8AC4B2;
+
+                    }
+                    .arrow-roof{
+                        height: 15px;
+                        width: 1px;
+                        border-radius: 50px;
+                        transform: translate(16.5px, -10px);
+
+                        background-color: #8AC4B2;
+
+                    }
+                }
+                .button_active{
+                    transition: 0.5s;
+                    rotate: 180deg;
+                    transform: translateX(-300px);
+                }
+
+                    
+            }
+
+
+            display: flex;
+            position: relative;
+
+            transition: 0.5s;
+
+    
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 0px 16px 0px 0px;
+            border: solid 1px #8AC4B2;
+            box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1); /* Adjust the horizontal offset */
+    
+            position: fixed;
+            background-color: white;
+            left: -170px;
+            opacity: 0;
+            top: 0;
+            width: 140px;
+            height: 100vh;
+            .option{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+                p{
+                    margin: 0;
+                    font-size: 15px;
+                    letter-spacing: 0em;
+                    color:#4C6372;
         
+        
+                }
+                img{
+                    position: static;
+                    width: 35px;
+                    height: 35px;
+                }
+    
+            }
+            .sub_left_header{
+                transition: 0.5s;
+
+                background-color: white;
+                position: absolute;
+                left: -300px;
+                width: 300px;
+                height: 100vh;
+                border: solid 1px #158864;
+                text-align: left;
+                .level_1{
+                    padding-left: 10px;
+                    .level_2{
+                        display: none;
+                        padding-left: 10px;
+
+                        .level_3{
+                            display: none;
+
+                            padding-left: 10px;
+
+
+                        }
+                        .active{
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                    .active{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+                .active{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .down-pointing-arrow{
+                    height: 20px;
+                    display: flex;
+                    position: absolute;
+                    top: 20;
+                    right: 20px;
+                    
+                    justify-content: center;
+                    align-items: center;
+    
+                    .left-wing{
+                        background-color: #8AC4B2;
+                        height: 1px;
+                        width: 10px;
+                        border-radius: 50px;
+                        rotate: 45deg;
+                        transform: translate(2px, -2.5px);
+                    }
+                    .right-wing{
+                        background-color: #8AC4B2;
+                        height: 1px;
+                        width: 10px;
+                        border-radius: 50px;
+                        rotate: -45deg;
+                        transform: translate(0px, 0px);
+    
+                    }
+                }
+            }
+            
+        .active{
+            transition: 0.5s;
+            left: 170px;
+    
+    
     }
+    
+        }
+
+    .left_active{
+        transition: 0.5s;
+        left: 0;
+        opacity: 100%;
+    
+    }
+
+    
+
+    }
+    
       
 }
 
